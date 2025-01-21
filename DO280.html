@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat OpenShift Administration II Study Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        h1, h2, h3 { color: #d9534f; }
+        ul { list-style-type: square; }
+        .exercise { background-color: #f9f9f9; padding: 10px; border-left: 5px solid #5bc0de; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Red Hat OpenShift Administration II (DO280) Study Guide with Exercises</h1>
+
+    <h2>1. Describe the Red Hat OpenShift Container Platform</h2>
+    <h3>Study Material:</h3>
+    <ul>
+        <li><strong>OpenShift Architecture Components:</strong></li>
+        <ul>
+            <li>API Server: Manages REST API calls and handles cluster state.</li>
+            <li>etcd: A distributed key-value store to persist cluster data.</li>
+            <li>Scheduler: Assigns workloads to nodes based on resource availability.</li>
+            <li>Controllers: Ensure the desired state of objects.</li>
+        </ul>
+        <li><strong>Differences Between OpenShift and Kubernetes:</strong></li>
+        <ul>
+            <li>Built-in security policies.</li>
+            <li>Integrated developer tools and CI/CD capabilities.</li>
+            <li>Enterprise support with Red Hat services.</li>
+        </ul>
+    </ul>
+    <h3>Exercises:</h3>
+    <div class="exercise">
+        <ol>
+            <li>Explain the function of each OpenShift component.</li>
+            <li>Compare OpenShift with Kubernetes in a short essay.</li>
+            <li>Install OpenShift locally using `crc` (CodeReady Containers) and explore basic commands.</li>
+        </ol>
+    </div>
+
+    <h2>2. Verify the Health of a Cluster</h2>
+    <h3>Study Material:</h3>
+    <ul>
+        <li><strong>Installation Methods:</strong> Installer-provisioned and user-provisioned infrastructure.</li>
+        <li><strong>Cluster Verification:</strong></li>
+        <ul>
+            <li>Use `oc get nodes` to check node status.</li>
+            <li>Monitor pods with `oc get pods --all-namespaces`.</li>
+            <li>Examine logs using `oc logs` and troubleshoot failures.</li>
+        </ul>
+    </ul>
+    <h3>Exercises:</h3>
+    <div class="exercise">
+        <ol>
+            <li>Deploy an OpenShift cluster using an installer.</li>
+            <li>Run health checks using `oc get nodes` and `oc get pods -n openshift-cluster-version`.</li>
+            <li>Review logs using `oc logs` and debug issues.</li>
+        </ol>
+    </div>
+
+    <h2>3. Configure Authentication and Authorization</h2>
+    <h3>Study Material:</h3>
+    <ul>
+        <li><strong>Identity Providers:</strong> HTPasswd, LDAP, OAuth.</li>
+        <li><strong>RBAC:</strong> Managing users and groups, role assignments.</li>
+    </ul>
+    <h3>Exercises:</h3>
+    <div class="exercise">
+        <ol>
+            <li>Set up HTPasswd authentication for users.</li>
+            <li>Create users and assign roles using `oc adm policy`.</li>
+            <li>Implement an OAuth identity provider.</li>
+        </ol>
+    </div>
+
+    <p>By thoroughly studying these topics and completing the exercises, you will be well-prepared to pass the <strong>Red Hat Certified Specialist in OpenShift Administration (EX280)</strong> exam.</p>
+</body>
+</html>
+
